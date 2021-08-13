@@ -63,6 +63,7 @@ public class PersonService {
         public void delete(Long id) throws PersonNotFoundException {
             verifyIfExists(id);
             personRepository.deleteById(id);
+
         }
 
     public MessageResponseDTO updateById(Long id, PersonDTO personDTO) throws PersonNotFoundException {
